@@ -1,5 +1,5 @@
 var dayDisplayEl = $('#dayDisplay');
-var timeDisplayEl = $('#timeDisplay');
+var timeDisplayEl = $('#hourDisplay');
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
@@ -11,14 +11,15 @@ $(function () {
     dayDisplayEl.text(currentDay);
   }
 
-  function displayTime() {
-    var currentTime = dayjs().format('HH');
-    timeDisplayEl.text(currentTime);
+  function displayHour() {
+    var currentHour = dayjs().format('HH');
+    timeDisplayEl.text(currentHour);
   }
 
   displayDay();
+  displayHour();
 
-  if (taskTime.isBefore(presentTime)) {
+  if (taskHour.isBefore(presentHour)) {
 
   }
 
