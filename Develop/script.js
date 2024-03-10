@@ -17,21 +17,31 @@ $(function () {
     var currentHour = dayjs().format('HH');
     timeDisplayEl.text(currentHour);
   
-  }displayDay();
-   displayHour();
+  }
 
 
    function userInput () { 
-    $('saveBtn').on('click', function () {
+    $('.saveBtn').on('click', function () {
      var key = $(this).parent().attr('id');
-     var value = $(this).siblings('description').value();
+     var value = $(this).siblings('.description').val();
      localStorage.setItem(key,value);
-    })
-   }
+
+    });
+    
+    }
+
+    $('.time-block').each(function() {
+      var key = $(this).attr('id');
+      var value = localStorage.getItem(key);
+      $(this).children('.description').val(value);
+    });
+  
+ 
+  displayDay();
+  displayHour();
+  userInput(); 
  
  }); 
-  
-  
  
 
 
