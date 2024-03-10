@@ -3,6 +3,7 @@ var timeDisplayEl = $('#timeDisplay');
 
 
 
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -13,11 +14,11 @@ $(function () {
     dayDisplayEl.text(currentDay);
   }
 
-  function displayHour() {
+  function displayTime() {
     var currentTime = dayjs().format('HH:mm');
     timeDisplayEl.text(currentTime);
   
-  }
+  } setInterval(displayTime, 1000);
 
 
    function userInput () { 
@@ -38,7 +39,7 @@ $(function () {
   
  
   displayDay();
-  displayHour();
+  displayTime();
   userInput(); 
  
  }); 
