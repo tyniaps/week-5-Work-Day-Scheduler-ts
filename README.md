@@ -26,3 +26,5 @@ SO THAT I can manage my time effectively
 ![Screenshot of Work Day Scheduler Project](<Screenshot 2024-03-10 154401.png>)
 
 ## Link to Deployed Application
+
+https://tyniaps.github.io/week-5-Work-Day-Scheduler-ts/
