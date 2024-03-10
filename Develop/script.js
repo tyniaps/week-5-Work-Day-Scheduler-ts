@@ -1,5 +1,5 @@
 var dayDisplayEl = $('#dayDisplay');
-var timeDisplayEl = $('#hourDisplay');
+var timeDisplayEl = $('#timeDisplay');
 
 
 
@@ -14,8 +14,8 @@ $(function () {
   }
 
   function displayHour() {
-    var currentHour = dayjs().format('HH');
-    timeDisplayEl.text(currentHour);
+    var currentTime = dayjs().format('HH:mm');
+    timeDisplayEl.text(currentTime);
   
   }
 
