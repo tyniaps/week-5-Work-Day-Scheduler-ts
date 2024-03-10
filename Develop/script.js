@@ -1,11 +1,7 @@
 var dayDisplayEl = $('#dayDisplay');
 var timeDisplayEl = $('#hourDisplay');
 var taskHourEl = $('.time-block');
-var saveEntryButtonEl = $(".saveBtn");
 
-var taskDescriptionEl = $('.description');
-
-var description = localStorage.getItem("description")
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
@@ -24,16 +20,6 @@ $(function () {
   }displayDay();
    displayHour();
  
-
- 
-
- saveEntryButtonEl.on('click', function () {
-  
-    taskDescriptionEl.textContent = description;
-    localStorage.setItem("description", description);
-}
-
- );
 
  }); 
   
