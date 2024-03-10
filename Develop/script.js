@@ -23,7 +23,8 @@ $(function () {
 
    function userInput () { 
     $('saveBtn').on('click', function () {
-      
+     var key = $(this).parent().attr('id');
+     var value = $(this).siblings('description').value();
     })
 
    }
