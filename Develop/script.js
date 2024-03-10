@@ -1,6 +1,6 @@
 var dayDisplayEl = $('#dayDisplay');
 var timeDisplayEl = $('#hourDisplay');
-var taskHourEl = $('.time-block');
+
 
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
