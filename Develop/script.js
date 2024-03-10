@@ -25,8 +25,8 @@ $(function () {
     $('saveBtn').on('click', function () {
      var key = $(this).parent().attr('id');
      var value = $(this).siblings('description').value();
+     localStorage.setItem(key,value);
     })
-
    }
  
  }); 
