@@ -19,8 +19,15 @@ $(function () {
   
   }displayDay();
    displayHour();
- 
 
+
+   function userInput () { 
+    $('saveBtn').on('click', function () {
+      
+    })
+
+   }
+ 
  }); 
   
   
