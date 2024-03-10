@@ -23,4 +23,6 @@ SO THAT I can manage my time effectively
 
 ## Screenshot
 
+![Screenshot of Work Day Scheduler Project](<Screenshot 2024-03-10 154401.png>)
+
 ## Link to Deployed Application
