@@ -20,6 +20,9 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- The code below links the html file to the style.css file to allow for visual styling.-->
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -32,6 +35,8 @@
       <p id="currentDay" class="lead"></p>
     </header>
 
+<!-- The code below will show the current day and current time at the top of the scheduler. -->
+
     <div>
       <h2 id="dayText">Current Day: <span id="dayDisplay"> </span> </h2>
       <h2 id="timeText">Current Time: <span id="timeDisplay"></span> </h2>
@@ -40,17 +45,10 @@
      
 
     <div class="container-fluid px-5">
-      <!-- Use class for "past", "present", and "future" to apply styles to the
-        time-block divs accordingly. The javascript will need to do this by
-        adding/removing these classes on each div by comparing the hour in the
-        id to the current hour. The html provided below is meant to be an example
-        demonstrating how the css provided can be leveraged to create the
-        desired layout and colors. The html below should be removed or updated
-        in the finished product. Remember to delete this comment once the
-        code is implemented.
-        -->
+        
+    <!-- The following lines of code are for each row of the schedular. Each has been given a time in order to display the business hours of 9-5pm -->
+    <!-- Each row has also been given its own unique id as this will be referenced within the JavaScript file. -->
 
-      <!-- Example of a past time block. The "past" class adds a gray background color. -->
       <div id="hour-09" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -59,7 +57,6 @@
         </button>
       </div>
 
-      <!-- Example of a present time block. The "present" class adds a red background color. -->
       <div id="hour-10" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -68,7 +65,6 @@
         </button>
       </div>
 
-      <!-- Example of a future time block. The "future" class adds a green background color. -->
       <div id="hour-11" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -77,7 +73,6 @@
         </button>
       </div>
     
-
       <div id="hour-12" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -127,12 +122,13 @@
       </div>
   
     </div>
-
+<!--CDN link for jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- CDN link for dayJS -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
     crossorigin="anonymous"></script>
-
+<!-- The below will link the html file to the JavaScript file to allow for user interactivity -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
