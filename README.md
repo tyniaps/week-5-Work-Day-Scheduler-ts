@@ -28,3 +28,7 @@ SO THAT I can manage my time effectively
 ## Link to Deployed Application
 
 https://tyniaps.github.io/week-5-Work-Day-Scheduler-ts/
+
+## Credits
+
+Starter code from: https://github.com/coding-boot-camp/crispy-octo-meme
